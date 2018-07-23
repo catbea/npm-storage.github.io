@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>短小精悍的前端缓存插件，解决前端内存泄漏问题</title>
+</head>
+<body>
+    <p>短小精悍的前端缓存插件，解决前端缓存问题</p>
+    <script src="../dist/main.js?105"></script>
+    <script>
+        //测试 localStorage
+        // console.log(MyLStorage);
+        // MyLStorage.set("aa","bb");
+        // console.log(MyLStorage.get("aa"));
+        // setTimeout(function(){
+        //     MyLStorage.remove("aa");
+        // },2000);
+
+        // setTimeout(function(){
+        //     MyLStorage.clear();
+        // },5000)
+
+        //测试 sessionStorage
+        MySStorage.set("aa1","bb1");
+        console.log(MySStorage.get("aa1"));
+        setTimeout(function(){
+            MySStorage.remove("aa1");
+        },2000);
+
+        setTimeout(function(){
+            MySStorage.clear();
+        },5000)
+    </script>
+</body>
+</html>
